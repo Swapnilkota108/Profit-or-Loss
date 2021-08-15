@@ -1,0 +1,71 @@
+*{
+    margin:0;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    padding:0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container{
+    height:90vh;
+    width:95vw;
+    background-image: linear-gradient(to bottom, rgb(15, 32, 39), rgb(32, 58, 67), rgb(44, 83, 100)) ;
+    background-size: 25em;
+    margin-top: 2rem;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    font-size: 1.5rem;
+    
+}
+
+h1{
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    color: white;
+}
+
+label{
+margin: 1.5rem;
+color: white;
+}
+input{
+    height: 1rem;
+    width: 8rem;
+    border-radius: 5px;
+}
+
+#button{
+    margin: 1rem;
+    height: 1.5rem;
+    width: 5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(15, 32, 39);
+    color: white;
+}
+
+#output{
+    height: 5rem;
+    width: 20rem;
+    background-color: white;
+    display: flex;
+    padding: 1rem;
+    opacity: 0.5;
+    border-radius: 5px;
+    
+}
+
+.qty{
+    margin-left: 5rem;
+}
+
+.slg{
+    margin-left: 2.4rem;
+}
