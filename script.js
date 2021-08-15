@@ -12,27 +12,19 @@ button.addEventListener('click',function (){
     let prc = purchasePrice.value;
     let qty = quantity.value;
     let slg = sellingPrice.value;
-    // validQuantity(prc,qty,slg);
     calculateProfitOrLoss(prc,qty,slg);
-
 
 })
 
 
-// function validQuantity(prc,qty,slg){
-    
+ 
 
-//     if(qty<=0){
-//         output.innerText = 'The Quantity of the Stock should be atleast greater than 0';
-//        }
-//     if(typeof(prc&&slg) != 'number'){
-//         output.innerText = 'Invalid input'
-//     } 
-    
+
+
 
  
     
-// }
+
 
 function calculateProfitOrLoss(prc,qty,slg){
     
@@ -46,6 +38,7 @@ function calculateProfitOrLoss(prc,qty,slg){
  }  if(prc>slg){
     let lossAmount = totalPurchaseAmount-totalSellingAmount;
     let percentage = ((prc-slg)*100/prc);
+    console.log(lossAmount);
     output.innerText = `You lost ${percentage}%. Your total loss is ₹${lossAmount} `
  }
  
