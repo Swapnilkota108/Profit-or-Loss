@@ -27,7 +27,7 @@ function calculateProfitOrLoss(prc,qty,slg){
      output.innerText = `You gained ${percentage}%. Your total profit is ₹${profittedAmount}`
     container.style.backgroundImage = "url('gif.gif')";
     container.style.backgroundSize = 'cover';
-    container.style.backgroundPositionX = '-60px'
+    container.style.backgroundPositionX = '-100px'
     }
   if(totalPurchaseAmount>totalSellingAmount){
     let lossAmount = totalPurchaseAmount-totalSellingAmount;
