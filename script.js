@@ -33,7 +33,10 @@ function calculateProfitOrLoss(prc,qty,slg){
     let lossAmount = totalPurchaseAmount-totalSellingAmount;
     let percentage = ((prc-slg)*100/prc);
     console.log(lossAmount);
-    output.innerText = `You lost ${percentage}%. Your total loss is ₹${lossAmount} `
+    output.innerText = `You lost ${percentage}%. Your total loss is ₹${lossAmount}`;
+    container.style.backgroundImage = "url('gif3.gif')";
+    container.style.backgroundSize = 'cover';
+    // container.style.backgroundPositionX = '-20px'
  }
  if(totalSellingAmount===totalPurchaseAmount){
     output.innerText = `You gained and lost 0% because the stock price remained same.`
