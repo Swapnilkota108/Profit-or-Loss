@@ -31,11 +31,11 @@ function calculateProfitOrLoss(prc,qty,slg){
  let totalPurchaseAmount = prc*qty;
  let totalSellingAmount = slg*qty;
  
- if(prc<slg){
+ if(totalPurchaseAmount<totalSellingAmount){
      let profittedAmount = totalSellingAmount-totalPurchaseAmount;
      let percentage = ((slg-prc)*100)/prc;
-     output.innerText = `You gained ${percentage}%. Your total profit is ₹${profittedAmount}  `
- }  if(prc>slg){
+     output.innerText = `You gained ${percentage}%. Your total profit is ₹${profittedAmount}`}
+  if(totalPurchaseAmount>totalSellingAmount){
     let lossAmount = totalPurchaseAmount-totalSellingAmount;
     let percentage = ((prc-slg)*100/prc);
     console.log(lossAmount);
