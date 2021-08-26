@@ -13,18 +13,7 @@ button.addEventListener('click',function (){
     let qty = quantity.value;
     let slg = sellingPrice.value;
     calculateProfitOrLoss(prc,qty,slg);
-
-})
-
-
- 
-
-
-
-
- 
-    
-
+});   
 
 function calculateProfitOrLoss(prc,qty,slg){
     
@@ -40,6 +29,10 @@ function calculateProfitOrLoss(prc,qty,slg){
     let percentage = ((prc-slg)*100/prc);
     console.log(lossAmount);
     output.innerText = `You lost ${percentage}%. Your total loss is ₹${lossAmount} `
+ }
+ if(totalSellingAmount===totalPurchaseAmount){
+    output.innerText = `You gained and lost 0% because the stock price remained same.`
+    output.backgroundImage = url('1992.webp')
  }
  
 }
