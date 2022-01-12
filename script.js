@@ -8,7 +8,7 @@ const container = document.querySelector('.container');
 output.style.display = 'none';
 
 
-button.addEventListener('click',function (){
+button.addEventListener('click', () => {
     output.style.display = 'block'
     let prc = purchasePrice.value;
     let qty = quantity.value;
@@ -16,7 +16,7 @@ button.addEventListener('click',function (){
     calculateProfitOrLoss(prc,qty,slg);
 });   
 
-function calculateProfitOrLoss(prc,qty,slg){
+const calculateProfitOrLoss = (prc,qty,slg) => {
     
  let totalPurchaseAmount = prc*qty;
  let totalSellingAmount = slg*qty;
